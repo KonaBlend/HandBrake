@@ -4,6 +4,10 @@ $(eval $(call import.CONTRIB.defs,LIBMFX))
 LIBMFX.FETCH.url = http://download.handbrake.fr/contrib/libmfx-v6.0.0.349.tar.bz2
 LIBMFX.FETCH.md5 = eb73af5bdde696c7e2ceb1bd83c1f19b
 
+# TODO: Upstream no longer provides bzip2 archives
+#LIBMFX.FETCH.url = https://github.com/Rodeo314/libmfx/archive/v6.0.0.349.tar.gz
+#LIBMFX.FETCH.md5 = 0fb95829f1886bdb9bb7c812f7315297
+
 LIBMFX.CONFIGURE.bootstrap = rm -fr aclocal.m4 autom4te.cache; autoreconf -fiv;
 
 ## optional static libs need to be marked
