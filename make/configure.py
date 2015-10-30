@@ -1738,7 +1738,7 @@ int main ()
     args = []
     for arg in Option.conf_args:
         args.append( arg[1] )
-    doc.add( 'CONF.args', ' '.join( args ))
+    doc.add( 'CONF.args', ' '.join(args).replace('$','$$') )
 
     doc.addBlank()
     doc.add( 'HB.title',       project.title )
